@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "eL5EIZkpXbOqU4OeCIA9wS6VqEwT68QBf2DM1SEZ3RXyjdrGqu8fqlB8s9nW38jk3rNjNsXAMT0N7raCF9bCcg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\estudiante\\Documents\\Proyecto\\Presentacion\\Presentacion\\Presentacion.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\estudiante\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\estudiante\\.nuget\\packages\\system.net.http.json\\6.0.0\\system.net.http.json.6.0.0.nupkg.sha512",
+    "C:\\Users\\estudiante\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\estudiante\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\estudiante\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Presentacion depends on System.Net.Http.Json (>= 5.0.2) but System.Net.Http.Json 5.0.2 was not found. An approximate best match of System.Net.Http.Json 6.0.0 was resolved.",
+      "libraryId": "System.Net.Http.Json",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}

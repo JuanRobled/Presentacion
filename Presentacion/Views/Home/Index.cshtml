@@ -1,0 +1,285 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Inicio";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="~/Content/Site.css">
+    <!-- Puedes agregar más enlaces a hojas de estilo, scripts y otros recursos aquí -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header {
+            padding: 20px 0;
+            background-color: #343a40;
+        }
+
+        #hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('~/Content/Images/hero-background.jpg') center/cover no-repeat;
+            padding: 100px 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        #featured-products,
+        #new-arrivals,
+        #categories,
+        #login {
+            padding: 80px 0;
+        }
+
+        .card {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .category img {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .category:hover img {
+            transform: scale(1.05);
+        }
+
+        footer {
+            padding: 50px 0;
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        footer a {
+            color: #ffc107;
+        }
+
+        .cart-icon {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .cart-icon i {
+            font-size: 24px;
+        }
+
+        .cart-icon .badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div id="logo">
+                        <img src="Images/Logo.jpeg" alt="Logo de la tienda" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form class="form-inline mt-3">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar productos" aria-label="Buscar">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </div>
+                <div class="col-lg-3">
+                    <div class="cart-icon text-white">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge badge-pill badge-warning">3</span>
+                    </div>
+                    <a href="#" class="text-white">Carrito de Compras</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Explorar Productos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Iniciar Sesión</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="display-4">Descubre las Últimas Tendencias</h1>
+                    <p class="lead">Encuentra productos exclusivos y de alta calidad en nuestra tienda en línea.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured-products" class="bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Productos Destacados</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="~/Content/Images/product1.jpg" alt="Producto 1" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Zapatillas Deportivas</h5>
+                            <p class="card-text">Diseño moderno y cómodo. Perfecto para cualquier actividad deportiva.</p>
+                            <span class="price">$79.99</span>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="~/Content/Images/product2.jpg" alt="Producto 2" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Reloj Inteligente</h5>
+                            <p class="card-text">Mide tu actividad diaria y te mantiene conectado. ¡Imprescindible para la vida moderna!</p>
+                            <span class="price">$129.99</span>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="~/Content/Images/product3.jpg" alt="Producto 3" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Mochila Resistente al Agua</h5>
+                            <p class="card-text">Perfecta para viajes y actividades al aire libre. Gran capacidad y durabilidad.</p>
+                            <span class="price">$49.99</span>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="new-arrivals">
+        <div class="container">
+            <h2 class="text-center mb-4">Nuevas Llegadas</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="~/Content/Images/new-arrival1.jpg" alt="Nuevo Producto 1" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Auriculares Inalámbricos</h5>
+                            <p class="card-text">Experiencia de sonido inigualable. Conéctate sin restricciones.</p>
+                            <span class="price">$89.99</span>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="~/Content/Images/new-arrival2.jpg" alt="Nuevo Producto 2" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Cámara de Seguridad HD</h5>
+                            <p class="card-text">Mantén tu hogar seguro con esta cámara de última generación.</p>
+                            <span class="price">$159.99</span>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="~/Content/Images/new-arrival3.jpg" alt="Nuevo Producto 3" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Tablet Ultradelgada</h5>
+                            <p class="card-text">Potencia y portabilidad en un solo dispositivo. Ideal para trabajo y entretenimiento.</p>
+                            <span class="price">$249.99</span>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="categories" class="bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Categorías Populares</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="category">
+                        <img src="~/Content/Images/category-electronics.jpg" alt="Electrónicos" class="img-fluid">
+                        <h4>Electrónicos</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category">
+                        <img src="~/Content/Images/category-clothing.jpg" alt="Ropa y Accesorios" class="img-fluid">
+                        <h4>Ropa y Accesorios</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category">
+                        <img src="~/Content/Images/category-outdoor.jpg" alt="Deportes y Aire Libre" class="img-fluid">
+                        <h4>Deportes y Aire Libre</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Contacto</h4>
+                    <p>Correo Electrónico: info@tutienda.com</p>
+                    <p>Teléfono: +123 456 789</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Redes Sociales</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Información Legal</h4>
+                    <p><a href="#">Términos y Condiciones</a></p>
+                    <p><a href="#">Política de Privacidad</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2023 Tu Tienda. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Puedes agregar más scripts y enlaces a bibliotecas aquí -->
+
+</body>
+</html>
